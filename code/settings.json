@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontLigatures": true,
+    "chat.extensionUnification.enabled": false,
+    "editor.fontFamily": "'Iosevka Custom','Symbols Nerd Font'",
+    "editor.fontVariations": true,
+    "terminal.integrated.fontLigatures.featureSettings": "\"calt\" on, liga\" on,"
+}
