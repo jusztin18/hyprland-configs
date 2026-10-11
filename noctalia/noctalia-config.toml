@@ -1,0 +1,442 @@
+[accessibility]
+ui_scale = 1.2
+
+[bar]
+order = [ "bar", "default" ]
+
+    [bar.bar]
+    background_opacity = 0.0
+    capsule_opacity = 0.59999998658895493
+    center = [ "workspaces" ]
+    enabled = true
+    end = [ "group:g3", "spacer_7", "group:g2", "spacer_5", "session" ]
+    margin_ends = 25
+    padding = 0
+    scale = 1.300000011920929
+    start = [ "clock", "spacer_3", "group:g1", "spacer_2", "weather" ]
+    thickness = 40
+
+        [[bar.bar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "cpu", "ram" ]
+        opacity = 0.40000000596046448
+        padding = 6.0
+        widget_spacing = 10
+
+        [[bar.bar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "notifications", "network", "volume", "brightness" ]
+        opacity = 0.60000002384185791
+        padding = 10.0
+        widget_spacing = 15
+
+        [[bar.bar.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "wallhaven", "tray" ]
+        opacity = 0.60000002384185791
+        padding = 10.0
+
+    [bar.default]
+    center = [ "workspaces", "spacer_1", "active_window" ]
+    concave_edge_corners = true
+    enabled = false
+    end = [ "media", "spacer_1", "tray", "notifications", "network", "volume", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius_bottom_left = 12
+    radius_bottom_right = 12
+    radius_top_left = 0
+    radius_top_right = 0
+    reserve_space = false
+    scale = 1.1000000000000001
+    smart_auto_hide = true
+    start = [ "launcher", "clock", "spacer_1", "group:g1" ]
+    thickness = 35
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = ""
+        border_width = 1.0
+        enabled = true
+        fill = "primary"
+        foreground = "secondary"
+        id = "g1"
+        members = [ "temp", "sysmon_2", "sysmon_3" ]
+        opacity = 1.0
+        padding = 6.0
+
+[brightness]
+enable_ddcutil = true
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "Austria, Leoben"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1920.0
+    cy = 1978.0
+    output = "HDMI-A-1"
+    placement_height = 2160.0
+    placement_width = 3840.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[osd.kinds]
+bluetooth = false
+wifi = false
+
+[plugin_settings."noctalia/wallhaven"]
+download_dir = "/home/justin/Pictures/wallpapers"
+
+[plugins]
+enabled = [ "noctalia/wallhaven" ]
+
+[shell]
+clipboard_image_action_command = "swash --stdin --name \"swash-$(date +'%Y-%m-%d_%H:%M:%S').png\""
+launch_apps_as_systemd_services = true
+password_style = "random"
+polkit_agent = true
+settings_show_advanced = true
+
+    [shell.greeter_sync]
+    auto_sync = false
+
+    [shell.panel]
+    control_center_placement = "floating"
+    open_near_click_control_center = true
+    session_placement = "floating"
+    session_position = "center"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 20
+
+    [shell.screenshot]
+    copy_to_clipboard = false
+    pipe_command = "swash --stdin --name \"swash-$(date +'%Y-%m-%d_%H:%M:%S').png\""
+    pipe_to_command = true
+    save_to_file = false
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[system.monitor]
+gpu_poll_seconds = 2
+
+[theme]
+builtin = "Noctalia"
+community_palette = "GitHub Dark"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "faithful"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt" ]
+    community_ids = [ "discord", "telegram", "libreoffice", "micro", "vscode", "steam", "fastfetch", "yazi" ]
+
+        [theme.templates.user.yazi]
+        input_path = "$XDG_CONFIG_HOME/.config/noctalia/templates/yazi.toml"
+        output_path = "$XDG_CONFIG_HOME/.config/yazi/theme.toml"
+        post_hook = ""
+
+[wallpaper]
+directory = "/home/justin/Pictures/wallpapers"
+
+    [wallpaper.automation]
+    enabled = true
+
+    [wallpaper.default]
+    path = "/home/justin/Pictures/wallpapers/wallhaven-0qgmp7.jpg"
+
+    [wallpaper.last]
+    path = "/home/justin/Pictures/wallpapers/wallhaven-0qgmp7.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/justin/Pictures/wallpapers/wallhaven-0qgmp7.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/justin/Pictures/wallpapers/wallhaven-0qgmp7.jpg"
+
+[widget.brightness]
+capsule = true
+capsule_opacity = 0.59999999999999998
+color = "primary"
+
+[widget.clock]
+capsule = true
+capsule_opacity = 0.5
+color = "primary"
+format = "{:%d/%m/%Y %A %H:%M }"
+
+[widget.cpu]
+capsule = true
+capsule_border_width = 2.0
+capsule_opacity = 0.59999999999999998
+capsule_radius = "auto"
+color = "primary"
+
+[widget.launcher]
+color = "secondary"
+
+[widget.media]
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+[widget.network]
+capsule = true
+capsule_opacity = 0.59999999999999998
+color = "primary"
+
+[widget.notifications]
+capsule = true
+capsule_opacity = 0.59999999999999998
+color = "primary"
+
+[widget.ram]
+capsule = true
+capsule_opacity = 0.59999999999999998
+color = "primary"
+
+[widget.session]
+capsule = true
+capsule_fill = "surface_variant"
+capsule_opacity = 0.5
+color = "error"
+
+[widget.spacer_1]
+type = "spacer"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.spacer_5]
+type = "spacer"
+
+[widget.spacer_7]
+type = "spacer"
+
+[widget.sysmon_2]
+glyph = "gpu-usage"
+show_value = false
+stat = "gpu_temp"
+type = "sysmon"
+
+[widget.sysmon_3]
+glyph = "cpu-2"
+stat = "ram_used"
+type = "sysmon"
+
+[widget.temp]
+show_value = false
+
+[widget.tray]
+capsule = true
+capsule_fill = "surface_variant"
+capsule_foreground = "primary"
+capsule_opacity = 0.59999999999999998
+color = "primary"
+icon_color = "primary"
+
+[widget.volume]
+capsule = true
+capsule_opacity = 0.59999999999999998
+color = "primary"
+
+[widget.wallhaven]
+capsule = true
+capsule_fill = "surface_variant"
+capsule_opacity = 0.59999999999999998
+capsule_padding = 8
+capsule_radius = "auto"
+color = "primary"
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.weather]
+capsule = true
+capsule_foreground = "secondary"
+capsule_opacity = 0.40000000000000002
+capsule_padding = 10
+color = "primary"
+
+[widget.workspaces]
+active_pill_size = 2.5
+capsule = true
+capsule_fill = "on_primary"
+capsule_opacity = 0.59999999999999998
+empty_color = "tertiary"
+inactive_pill_size = 1.0
+pill_scale = 0.80000000000000004
+show_labels = false

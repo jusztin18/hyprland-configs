@@ -4,6 +4,7 @@ hl.config({
     input = {
         -- sensitivity = -0.25,
         kb_layout = "de",
+        kb_variant = "nodeadkeys",
         kb_options = "grp:caps_toggle",
         accel_profile = "flat",
     },
